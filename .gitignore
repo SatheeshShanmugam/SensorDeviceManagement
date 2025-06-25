@@ -1,0 +1,11 @@
+# Ignore build folders
+bin/
+obj/
+
+# Ignore user-specific settings
+.vs/
+*.user
+*.suo
+
+# Ignore logs
+*.log

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogTagSensor.Api", "LogTagSensorSln\LogTagSensor.Api.csproj", "{312B3217-D59B-424E-B9AE-380E36E18517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogTagSensor.Application", "LogTagSensor.Application\LogTagSensor.Application.csproj", "{BE2C8F53-9804-46BF-BEF9-CA96775DE8F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogTagSensor.Domain", "LogTagSensor.Domain\LogTagSensor.Domain.csproj", "{0060BB0D-8B43-4DD6-8F77-02C559EB40DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogTagSensor.Infrastructure", "LogTagSensor.Infrastructure\LogTagSensor.Infrastructure.csproj", "{EBC0F9DB-291B-406F-9EA1-0D8AA616B970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{312B3217-D59B-424E-B9AE-380E36E18517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312B3217-D59B-424E-B9AE-380E36E18517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312B3217-D59B-424E-B9AE-380E36E18517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312B3217-D59B-424E-B9AE-380E36E18517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE2C8F53-9804-46BF-BEF9-CA96775DE8F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2C8F53-9804-46BF-BEF9-CA96775DE8F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2C8F53-9804-46BF-BEF9-CA96775DE8F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2C8F53-9804-46BF-BEF9-CA96775DE8F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0060BB0D-8B43-4DD6-8F77-02C559EB40DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0060BB0D-8B43-4DD6-8F77-02C559EB40DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0060BB0D-8B43-4DD6-8F77-02C559EB40DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0060BB0D-8B43-4DD6-8F77-02C559EB40DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC0F9DB-291B-406F-9EA1-0D8AA616B970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC0F9DB-291B-406F-9EA1-0D8AA616B970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC0F9DB-291B-406F-9EA1-0D8AA616B970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC0F9DB-291B-406F-9EA1-0D8AA616B970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7FDF464-653A-4749-9E2F-EC836DEE4CF2}
+	EndGlobalSection
+EndGlobal
