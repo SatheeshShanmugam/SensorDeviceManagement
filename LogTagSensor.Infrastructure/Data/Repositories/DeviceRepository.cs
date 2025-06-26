@@ -19,7 +19,11 @@ namespace LogTagSensor.Infrastructure.Data.Repositories
             return d => d.Id == Id && d.IsActive;
         }
 
-        private readonly Expression<Func<Device, bool>> isDeviceExists = d => d.IsActive;
+        private Expression<Func<Device, bool>> _delegate_DeviceBySerialNumber(string serialNumber)
+        {
+            return d => d.SerialNumber == serialNumber && d.IsActive;
+        }
+
 
         public async Task<Device> GetDeviceById(int Id)
         {
@@ -34,7 +38,7 @@ namespace LogTagSensor.Infrastructure.Data.Repositories
             }
 
             // Fetch the device along with its thresholds using Include
-             return await GetAll(x=> x.Thresholds).FirstOrDefaultAsync(d => d.SerialNumber == serialNumber);
+             return await GetAll(x=> x.Thresholds).FirstOrDefaultAsync(_delegate_DeviceBySerialNumber(serialNumber));
         }
         
 

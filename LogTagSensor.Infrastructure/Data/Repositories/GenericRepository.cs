@@ -20,7 +20,7 @@ namespace LogTagSensor.Infrastructure.Data.Repositories
             dbSet = _context.Set<T>();
         }
 
-        public IQueryable<T> GetQueryable() => dbSet.AsQueryable().AsNoTracking();
+        public IQueryable<T> GetQueryable() => dbSet.AsNoTracking();
 
         public async Task Add(T entity)
         {

@@ -19,12 +19,18 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddApplicationLayerDIs();
 builder.Services.AddInfrastructureServices(config);
 builder.Services.AddTransient<GlobalExceptionHandler>();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    //swagger configuration can be added here if needed
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "LogTagSensor API V1");
+        c.RoutePrefix = string.Empty; // Set Swagger UI at the app's root
+    });
 }
 
 // Configure the HTTP request pipeline.

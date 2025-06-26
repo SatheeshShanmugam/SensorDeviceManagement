@@ -43,7 +43,6 @@
             bool hasAlarm = await _unitOfWork.GetRepository<IAlarmRepository>().DeviceHasActiveAlarmOfTypeAsync(device.Id, sensorType);
             if (hasAlarm)
             {
-
                 return;
             }
 

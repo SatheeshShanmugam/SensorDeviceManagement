@@ -24,8 +24,11 @@ namespace LogTagSensor.Infrastructure.Extensions
             });
 
             // Register your infrastructure services here
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IDeviceRepository,DeviceRepository>();
             services.AddScoped<ISensorReadingRepository, SensorReadingRepository>();
+            services.AddScoped<IAlarmRepository, AlarmRepository>();
 
             return services;
         }

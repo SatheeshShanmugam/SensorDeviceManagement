@@ -3,6 +3,9 @@
     // Repository Interfaces
     public interface IDeviceRepository : IGenericRepository<Device>
     {
-        
+
+        Task<Device> GetDeviceBySerialNumberAsync(string serialNumber);
+
+
     }
 }

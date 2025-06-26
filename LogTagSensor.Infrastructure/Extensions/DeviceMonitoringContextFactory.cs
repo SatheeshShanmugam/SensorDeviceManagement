@@ -14,7 +14,7 @@ namespace LogTagSensor.Infrastructure.Extensions
         public DeviceMonitoringContext CreateDbContext(string[] args)
         {
             // Step safely up from bin/Debug/netX.X/ to solution root
-            var solutionRoot = Directory.GetParent(Directory.GetCurrentDirectory())                                         
+            var solutionRoot = Directory.GetParent(Directory.GetCurrentDirectory())
                                          .FullName;
 
             var basePath = Path.Combine(solutionRoot, "LogTagSensorSln");
@@ -40,4 +40,5 @@ namespace LogTagSensor.Infrastructure.Extensions
             return new DeviceMonitoringContext(optionsBuilder.Options);
         }
     }    
+
 }
